@@ -1,4 +1,4 @@
-﻿string s1 = await ReadFileAsync(1);
+﻿string s1 = await ReadFileAsync1(1);
 Console.WriteLine(s1);
 
 async Task<string> ReadFileAsync(int num)

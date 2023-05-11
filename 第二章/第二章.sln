@@ -5,53 +5,55 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp语言的新特性", "CSharp语言的新特性", "{88E76BF4-C23E-432E-AF45-E6A6E4A3A815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "顶级语句", "顶级语句\顶级语句.csproj", "{7BB6959E-403F-4BCC-95CC-B0861E837403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "顶级语句", "顶级语句\顶级语句.csproj", "{7BB6959E-403F-4BCC-95CC-B0861E837403}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "旧的using释放资源", "旧的using释放资源\旧的using释放资源.csproj", "{35B35525-5201-466D-9D8F-6D2DB2216D89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "旧的using释放资源", "旧的using释放资源\旧的using释放资源.csproj", "{35B35525-5201-466D-9D8F-6D2DB2216D89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "using声明新语法", "using声明新语法\using声明新语法.csproj", "{5DC4669D-6370-4477-B029-4478CE69260C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "using声明新语法", "using声明新语法\using声明新语法.csproj", "{5DC4669D-6370-4477-B029-4478CE69260C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "using的陷阱", "using的陷阱\using的陷阱.csproj", "{FF457764-6F98-4107-AF50-2354B630EE83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "using的陷阱", "using的陷阱\using的陷阱.csproj", "{FF457764-6F98-4107-AF50-2354B630EE83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "简化的命名空间声明", "简化的命名空间声明\简化的命名空间声明.csproj", "{AAAB4AD8-D4A5-48B0-930D-84AE6DD5E921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "简化的命名空间声明", "简化的命名空间声明\简化的命名空间声明.csproj", "{AAAB4AD8-D4A5-48B0-930D-84AE6DD5E921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "可空引用类型1", "可空引用类型1\可空引用类型1.csproj", "{75695BF2-7C8A-4EE7-A500-CC5699DD14C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "可空引用类型1", "可空引用类型1\可空引用类型1.csproj", "{75695BF2-7C8A-4EE7-A500-CC5699DD14C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "可空引用类型2", "可空引用类型2\可空引用类型2.csproj", "{F35A9127-EE73-4045-86C0-46B4DD5B9998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "可空引用类型2", "可空引用类型2\可空引用类型2.csproj", "{F35A9127-EE73-4045-86C0-46B4DD5B9998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "记录类型1", "记录类型1\记录类型1.csproj", "{EBA31960-5631-433D-BEAA-A2BA0B98C3D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "记录类型1", "记录类型1\记录类型1.csproj", "{EBA31960-5631-433D-BEAA-A2BA0B98C3D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "记录类型2", "记录类型2\记录类型2.csproj", "{FDB1B018-3E7B-4A8B-8638-92600DD23D97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "记录类型2", "记录类型2\记录类型2.csproj", "{FDB1B018-3E7B-4A8B-8638-92600DD23D97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "记录类型3", "记录类型3\记录类型3.csproj", "{269D00B3-BDAB-4409-AA2F-4AD3146DA559}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "记录类型3", "记录类型3\记录类型3.csproj", "{269D00B3-BDAB-4409-AA2F-4AD3146DA559}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "异步编程", "异步编程", "{DB97A5CB-81A4-4885-BF74-CBB08B86E075}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "异步的基本使用", "异步的基本使用\异步的基本使用.csproj", "{191155B6-A310-449A-9C6D-2D2DF4A4D6F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "异步的基本使用", "异步的基本使用\异步的基本使用.csproj", "{191155B6-A310-449A-9C6D-2D2DF4A4D6F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "编写异步方法", "编写异步方法\编写异步方法.csproj", "{3F902108-C455-4890-A3C6-B6CB59BE8597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "编写异步方法", "编写异步方法\编写异步方法.csproj", "{3F902108-C455-4890-A3C6-B6CB59BE8597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "异步编程原理", "异步编程原理\异步编程原理.csproj", "{DF39C6F0-5DE6-4DD0-96CC-3E7B4B56C1FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "异步编程原理", "异步编程原理\异步编程原理.csproj", "{DF39C6F0-5DE6-4DD0-96CC-3E7B4B56C1FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "async背后的线程切换", "async背后的线程切换\async背后的线程切换.csproj", "{09FDA9BF-49BC-4E97-ADFA-854EF708EEEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "async背后的线程切换", "async背后的线程切换\async背后的线程切换.csproj", "{09FDA9BF-49BC-4E97-ADFA-854EF708EEEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "异步方法不等于多线程", "异步方法不等于多线程\异步方法不等于多线程.csproj", "{14F38C41-8AEF-4857-AA7A-72CC63A941AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "异步方法不等于多线程", "异步方法不等于多线程\异步方法不等于多线程.csproj", "{14F38C41-8AEF-4857-AA7A-72CC63A941AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "不用async的异步方法", "不用async的异步方法\不用async的异步方法.csproj", "{FD039696-2AD7-42B0-A259-96CF2EE32308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "不用async的异步方法", "不用async的异步方法\不用async的异步方法.csproj", "{FD039696-2AD7-42B0-A259-96CF2EE32308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "手动创建Task对象", "手动创建Task对象\手动创建Task对象.csproj", "{987C3AFD-06D5-4AD0-949F-CBCC74D52533}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "手动创建Task对象", "手动创建Task对象\手动创建Task对象.csproj", "{987C3AFD-06D5-4AD0-949F-CBCC74D52533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "异步的暂停", "异步的暂停\异步的暂停.csproj", "{9AF5C6C0-042C-42F0-BAD4-77A257B89563}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "异步的暂停", "异步的暂停\异步的暂停.csproj", "{9AF5C6C0-042C-42F0-BAD4-77A257B89563}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "同时等待多个Task", "同时等待多个Task\同时等待多个Task.csproj", "{9D8BE22D-B61C-455B-A56A-EDE41CF6F07A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "同时等待多个Task", "同时等待多个Task\同时等待多个Task.csproj", "{9D8BE22D-B61C-455B-A56A-EDE41CF6F07A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LINQ", "LINQ", "{969B8260-FAA3-4B4C-8BFF-137A3A4BC627}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "委托的用法", "委托的用法\委托的用法.csproj", "{2BA2AF74-053F-461C-9008-E3706E4F13F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "委托的用法", "委托的用法\委托的用法.csproj", "{2BA2AF74-053F-461C-9008-E3706E4F13F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWhere的实现", "MyWhere的实现\MyWhere的实现.csproj", "{F43258D9-0BB9-4E1C-B806-99BF2395AF23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWhere的实现", "MyWhere的实现\MyWhere的实现.csproj", "{F43258D9-0BB9-4E1C-B806-99BF2395AF23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "常用集合扩展方法", "常用集合扩展方法\常用集合扩展方法.csproj", "{1637FDAA-B78E-45C7-8EFE-41528A31D328}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "常用集合扩展方法", "常用集合扩展方法\常用集合扩展方法.csproj", "{1637FDAA-B78E-45C7-8EFE-41528A31D328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yield和Async用法", "Yield和Async用法\Yield和Async用法.csproj", "{85048B34-0B79-443D-B225-89239CD7EBF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{1637FDAA-B78E-45C7-8EFE-41528A31D328}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1637FDAA-B78E-45C7-8EFE-41528A31D328}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1637FDAA-B78E-45C7-8EFE-41528A31D328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85048B34-0B79-443D-B225-89239CD7EBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85048B34-0B79-443D-B225-89239CD7EBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85048B34-0B79-443D-B225-89239CD7EBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85048B34-0B79-443D-B225-89239CD7EBF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,6 +180,7 @@ Global
 		{2BA2AF74-053F-461C-9008-E3706E4F13F0} = {969B8260-FAA3-4B4C-8BFF-137A3A4BC627}
 		{F43258D9-0BB9-4E1C-B806-99BF2395AF23} = {969B8260-FAA3-4B4C-8BFF-137A3A4BC627}
 		{1637FDAA-B78E-45C7-8EFE-41528A31D328} = {969B8260-FAA3-4B4C-8BFF-137A3A4BC627}
+		{85048B34-0B79-443D-B225-89239CD7EBF4} = {DB97A5CB-81A4-4885-BF74-CBB08B86E075}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46196820-E689-4608-9D3E-B53DF6F4FB6F}
