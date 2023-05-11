@@ -1,6 +1,6 @@
 ﻿string s1 = await ReadFileAsync(1);
 Console.WriteLine(s1);
-/*
+
 async Task<string> ReadFileAsync(int num)
 {
 	switch (num)
@@ -12,8 +12,8 @@ async Task<string> ReadFileAsync(int num)
 		default:
 			throw new ArgumentException("num invalid");
 	}
-}*/
-Task<string> ReadFileAsync(int num)
+}
+Task<string> ReadFileAsync1(int num)
 {
 	switch (num)
 	{
