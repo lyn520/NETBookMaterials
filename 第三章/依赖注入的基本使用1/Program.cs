@@ -12,9 +12,30 @@ using (ServiceProvider sp = services.BuildServiceProvider())
 }*/
 ServiceCollection services = new ServiceCollection();
 services.AddTransient<TestServiceImpl>();
+//services.AddScoped<TestServiceImpl>();
+//services.AddSingleton<TestServiceImpl>();
 using (ServiceProvider sp = services.BuildServiceProvider())
 {
-    var ts1 = sp.GetRequiredService<TestServiceImpl>();
-    var ts2 = sp.GetRequiredService<TestServiceImpl>();
+    TestServiceImpl ts1;
+    TestServiceImpl ts2;
+    TestServiceImpl ts3;
+    TestServiceImpl ts4;
+    using (IServiceScope serviceScope = sp.CreateScope())
+    {
+        ts1 = serviceScope.ServiceProvider.GetRequiredService<TestServiceImpl>();
+    }
+    using (IServiceScope serviceScope = sp.CreateScope())
+    {
+        ts2 = serviceScope.ServiceProvider.GetRequiredService<TestServiceImpl>();
+    }
+    using (IServiceScope serviceScope = sp.CreateScope())
+    {
+        ts3 = sp.GetRequiredService<TestServiceImpl>();
+    }
+    using (IServiceScope serviceScope = sp.CreateScope())
+    {
+        ts4 = sp.GetRequiredService<TestServiceImpl>();
+    }
     Console.WriteLine(object.ReferenceEquals(ts1, ts2));
+    Console.WriteLine(object.ReferenceEquals(ts3, ts4));
 }
