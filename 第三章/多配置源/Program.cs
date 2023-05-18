@@ -1,6 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 
 ConfigurationBuilder configBuilder = new ConfigurationBuilder();
+//一般放在普通json文件之前，仅开发环境使用
+configBuilder.AddUserSecrets<Program>();
+
 configBuilder.AddJsonFile("appsettings.json")
     .AddEnvironmentVariables("Test1_").AddCommandLine(args);
 IConfigurationRoot config = configBuilder.Build();
