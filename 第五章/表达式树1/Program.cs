@@ -6,11 +6,15 @@ using System.Reflection;
 using var ctx = new TestDbContext();
 
 
-/*
+
 Func<Book, bool> f1 = b => b.Price > 5 || b.AuthorName.Contains("杨中科");
 Expression<Func<Book, bool>> e = b => b.Price > 5 || b.AuthorName.Contains("杨中科");
+//var x = b => b.Price > 5 || b.AuthorName.Contains("杨中科");编译报错：无法推断类型
 Console.WriteLine(f1);
-Console.WriteLine(e);*/
+Console.WriteLine(e);
+
+ctx.Books.Where(f1).ToArray();
+ctx.Books.Where(e).ToArray();
 //ExpressionTreeToString的基本使用
 /*
 Expression<Func<Book, bool>> e = b => b.AuthorName.Contains("杨中科") || b.Price > 30;
@@ -189,29 +193,29 @@ string RemoveEmptyLine(string s)
 	var strs = s.Split("\r\n",StringSplitOptions.RemoveEmptyEntries);
 	return string.Join("\r\n", strs);
 }*/
-QueryBooks("Price", 18.0);
-QueryBooks("AuthorName", "杨中科");
-QueryBooks("Title", "零基础趣学C语言");
-IEnumerable<Book> QueryBooks(string propName, object value)
-{
-	Type type = typeof(Book);
-	PropertyInfo propInfo = type.GetProperty(propName);
-	Type propType = propInfo.PropertyType;
-	var b = Parameter(typeof(Book), "b");
-	Expression<Func<Book, bool>> expr;
-	if (propType.IsPrimitive)//如果是int、double等基本数据类型
-	{
-		expr = Lambda<Func<Book, bool>>(Equal(
-				MakeMemberAccess(b, typeof(Book).GetProperty(propName)),
-				Constant(value)), b);
-	}
-	else//如果是string等类型
-	{
-		expr = Lambda<Func<Book, bool>>(MakeBinary(ExpressionType.Equal,
-				MakeMemberAccess(b, typeof(Book).GetProperty(propName)),
-				Constant(value), false, propType.GetMethod("op_Equality")
-			), b);
-	}
-	TestDbContext ctx = new TestDbContext();
-	return ctx.Books.Where(expr).ToArray();
-}
+//QueryBooks("Price", 18.0);
+//QueryBooks("AuthorName", "杨中科");
+//QueryBooks("Title", "零基础趣学C语言");
+//IEnumerable<Book> QueryBooks(string propName, object value)
+//{
+//	Type type = typeof(Book);
+//	PropertyInfo propInfo = type.GetProperty(propName);
+//	Type propType = propInfo.PropertyType;
+//	var b = Parameter(typeof(Book), "b");
+//	Expression<Func<Book, bool>> expr;
+//	if (propType.IsPrimitive)//如果是int、double等基本数据类型
+//	{
+//		expr = Lambda<Func<Book, bool>>(Equal(
+//				MakeMemberAccess(b, typeof(Book).GetProperty(propName)),
+//				Constant(value)), b);
+//	}
+//	else//如果是string等类型
+//	{
+//		expr = Lambda<Func<Book, bool>>(MakeBinary(ExpressionType.Equal,
+//				MakeMemberAccess(b, typeof(Book).GetProperty(propName)),
+//				Constant(value), false, propType.GetMethod("op_Equality")
+//			), b);
+//	}
+//	TestDbContext ctx = new TestDbContext();
+//	return ctx.Books.Where(expr).ToArray();
+//}
